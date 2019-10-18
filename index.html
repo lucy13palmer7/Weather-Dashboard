@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="debug.css" /> -->
+  </head>
+  <body>
+    <section class="section">
+      <div class="container is-12">
+        <section class="hero is-dark">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                Weather DashBoard!
+              </h1>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section>
+      <div class="columns">
+        <div class="column is-4">
+          <!-- First column -->
+          <div id="searchContainer" class="container">
+            <div class="notification">
+              <div class="field has-addons">
+                <div class="control">
+                  <input
+                    id="searchInput"
+                    class="input searchControl"
+                    type="text"
+                    placeholder="City Name or Zipcode"
+                  />
+                </div>
+                <div class="control searchControl">
+                  <a id="searchBtn" class="searchButton button is-info">
+                    Search
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <!-- Second column -->
+        <div id="weatherContainer" class="container has-text-black">
+          <div class="column is-8">
+            <div id="weatherDescription" class=" notification is-primary">
+              <h1 id="cityHeader">City:</h1>
+              <img id="documentIconImg" />
+              <ul id="weatherMain" style="list-style: none;">
+                <li id="temperature">Temperature:</li>
+                <li id="weatherDescriptionHeader">Current Conditions:</li>
+                <li id="humidity">Humidity:</li>
+                <li id="windSpeed">Wind Speed:</li>
+                <li id="uvIndex">UV Index:</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fiveDay" >
+      <div class="columns">
+        <div class="column has-background-warning">
+          <h1>Date</h1>
+          <figure class="image is-16x16">
+            <img src="https://bulma.io/images/placeholders/128x128.png" />
+          </figure>
+          <ul style="list-style: none;">
+            <li id="fiveTemp" >Temperature:</li>
+            <li id="fiveHum" >Humidity:</li>
+          </ul>
+        </div>
+        <div class="column has-background-warning">
+          <h1>Date</h1>
+          <figure class="image is-16x16">
+            <img src="https://bulma.io/images/placeholders/128x128.png" />
+          </figure>
+          <ul style="list-style: none;">
+            <li>Temperature:</li>
+            <li>Humidity:</li>
+          </ul>
+        </div>
+        <div class="column has-background-warning">
+          <h1>Date</h1>
+          <figure class="image is-16x16">
+            <img src="https://bulma.io/images/placeholders/128x128.png" />
+          </figure>
+          <ul style="list-style: none;">
+            <li>Temperature:</li>
+            <li>Humidity:</li>
+          </ul>
+        </div>
+        <div class="column has-background-warning">
+          <h1>Date</h1>
+          <figure class="image is-16x16">
+            <img src="https://bulma.io/images/placeholders/128x128.png" />
+          </figure>
+          <ul style="list-style: none;">
+            <li>Temperature:</li>
+            <li>Humidity:</li>
+          </ul>
+        </div>
+        <div class="column has-background-warning">
+          <h1>Date</h1>
+          <figure class="image is-16x16">
+            <img src="https://bulma.io/images/placeholders/128x128.png" />
+          </figure>
+          <ul style="list-style: none;">
+            <li>Temperature:</li>
+            <li>Humidity:</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
